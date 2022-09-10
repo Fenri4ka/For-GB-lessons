@@ -19,4 +19,3 @@ from math import *
 num1 = round(sqrt((x_a - x_b)**2 + (y_a - y_b)**2)) 
 
 print("Расстояние между точками : ", num1)
-
