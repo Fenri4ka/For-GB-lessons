@@ -8,4 +8,4 @@ summa = 0
 for i in range(1, n+1):
     summa = (1+1/i)**i
     mylst.append(summa)
-print('Сумма чисел последовательности:',int(sum(mylst)))
+print('Сумма чисел последовательности:',round(sum(mylst),3))
