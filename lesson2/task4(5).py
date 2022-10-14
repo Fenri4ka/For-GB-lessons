@@ -8,7 +8,6 @@ n = int(input('Введите число:'))
 mylst = [random.randint(-n,n) for _ in range(n)]
 indlst = []
 mult = 1
-newlst = []
 print(f"Список из {n} элементов:", mylst)
 f = open('file.txt','r+')
 for i in range(len(mylst)):
@@ -23,5 +22,5 @@ for j in indlst:
 print("Произведение чисел из списка на позициях из файла:",mult)
 for k in range(len(mylst)):
     el = mylst.pop(random.randint(0,len(mylst)-1))
-    newlst.append(el)
-print("Перемешанный список:",newlst)
+    mylst.append(el)
+print("Перемешанный список:",mylst)
