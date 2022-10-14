@@ -12,11 +12,12 @@ newlst = []
 print(f"Список из {n} элементов:", mylst)
 f = open('file.txt','r+')
 for i in range(len(mylst)):
-    f.writelines(str(random.randint(0,len(mylst)-1))+'\n')
+    f.writelines(str(random.randint(0,len(mylst)-1)))
 f.close()
 with open('file.txt','r') as f:
     for line in f:
-        indlst.append(line.replace('\n',''))
+        for num in line:
+            indlst.append(num)
 for j in indlst:
     mult *= mylst[int(j)]
 print("Произведение чисел из списка на позициях из файла:",mult)
