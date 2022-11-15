@@ -20,7 +20,6 @@ name_2 = input("Какое имя второго игрока? ")
 m = random.randint(1, 101)
 step = 0
 counter = 0
-flag = False
 
 if m % 2 == 0:
     first = name_1
