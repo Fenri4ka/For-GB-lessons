@@ -3,8 +3,5 @@
 """
 s = "шлаваг Сашабв побга шоссе и равирмвааьв сосалабв сушку"
 s = s.split()
-ns = []
-for i in s:
-    if "абв" not in i:
-        ns.append(i)
+ns = [i for i in s if "абв" not in i]
 print(*ns, sep = " ")

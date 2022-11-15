@@ -6,8 +6,9 @@
 - [1.1, 1.2, 3.1, 5, 10.01] => 0.19
 """
 mylst = [float(i) for i in input("Введите числа через пробел:").split()]
-nlst = []
-for j in mylst:
-    if j%1!=0:
-        nlst.append(j%1)
+nlst = [j%1 for j in mylst if j%1!=0]
+#nlst = []
+#for j in mylst:
+    #if j%1!=0:
+        #nlst.append(j%1)
 print("Разница между максимальным и минимальным значением дробной части элементов:",round(max(nlst)-min(nlst),2))

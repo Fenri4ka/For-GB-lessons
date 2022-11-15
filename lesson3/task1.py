@@ -7,7 +7,13 @@
 """
 mylst = [int(i) for i in input("Введите числа через пробел:").split()]
 summa = 0
-for j in range(len(mylst)):
-    if j%2!=0:
-        summa+=mylst[j]
+
+#for j in range(len(mylst)):
+    #if j%2!=0:
+        #summa+=mylst[j]
+
+for index, elem in enumerate(mylst):
+    if index % 2 != 0:
+        summa += mylst[index]
+
 print("Сумма элементов списка на нечётных позициях:",summa)
