@@ -1,0 +1,2 @@
+SELECT * FROM mobile_phones
+WHERE ProductCount*Price BETWEEN 100000 AND 145000;
