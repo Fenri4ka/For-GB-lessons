@@ -1,1 +1,0 @@
-SELECT * FROM lesson_4.view_users_20;
